@@ -2,4 +2,14 @@
 title: Home
 heading: 'Roma JS'
 ---
-<h1>Roma JS</h1>
+
+{{> header }}
+
+<section class="section home-events bg-green">
+    <article class="row events">
+    <h1 class="events__title">Prossimi appuntamenti:</h1>
+        {{> event }}
+    </article>
+</section>
+
+{{> community }}

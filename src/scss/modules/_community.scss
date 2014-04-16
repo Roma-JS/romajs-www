@@ -1,0 +1,41 @@
+.community {
+    @extend .section;
+}
+
+.community__container {
+    @media #{$large-up} {
+        display: flex;
+        align-items:center;
+    }
+}
+
+.community__title {
+    text-align: center;
+}
+
+.badge {
+    overflow: hidden;
+    text-align: center;
+    margin:1rem 0;
+
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:6
+            );
+    }
+}
+
+.community__text {
+    display: block;
+    text-align: center;
+    margin:2rem auto;
+
+    @media #{$large-up} {
+        text-align: left;
+        max-width: 24rem;
+        margin:2rem 0;
+        @include grid-column(
+            $columns:6
+            );
+    }
+}

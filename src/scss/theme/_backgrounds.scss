@@ -1,0 +1,22 @@
+.bg-blue {
+    background: $blue;
+    color:$white;
+    @include headings(){
+      color:white;
+    }
+}
+
+.bg-green {
+    background: $green;
+    color:$white;
+    @include headings(){
+      color:white;
+    }
+
+    a {
+        color:$blue;
+        &:hover {
+            color:darken($blue, 20%);
+        }
+    }
+}

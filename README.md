@@ -20,7 +20,7 @@ bower install
 grunt server
 ```
 
-## compile 
+## Compile dist code
 ```
 grunt build
 ```

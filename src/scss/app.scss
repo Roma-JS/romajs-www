@@ -1,7 +1,9 @@
-@import "settings";
-@import "foundation";
+@import 
+    "mixin",
+    "colors",
+    "fonts",
+    "settings",
 
-// Or selectively include components
 // @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
@@ -14,7 +16,7 @@
 //   "foundation/components/dropdown-buttons",
 //   "foundation/components/flex-video",
 //   "foundation/components/forms",
-//   "foundation/components/grid",
+  "foundation/components/grid",
 //   "foundation/components/inline-lists",
 //   "foundation/components/joyride",
 //   "foundation/components/keystrokes",
@@ -30,11 +32,20 @@
 //   "foundation/components/split-buttons",
 //   "foundation/components/sub-nav",
 //   "foundation/components/switch",
-//   "foundation/components/tables",
+"foundation/components/tables",
 //   "foundation/components/tabs",
 //   "foundation/components/thumbs",
 //   "foundation/components/tooltips",
 //   "foundation/components/top-bar",
-//   "foundation/components/type",
+  "foundation/components/type",
 //   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+  "foundation/components/visibility",
+
+  "layout/sections",  
+  
+  "modules/masthead",
+  "modules/event",
+  "modules/community",
+
+  "theme/text",
+  "theme/backgrounds";

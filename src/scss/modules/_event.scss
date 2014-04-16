@@ -1,0 +1,85 @@
+// container classes
+.events__title {
+    font-size:rem-calc(23);
+    text-align: center;
+}
+
+// event
+
+.event {
+    @extend .text--mono;
+    text-align: center;
+    @include grid-column(
+        $columns:12,
+        $collapse:true,
+        $center:true
+        );
+    max-width: 30rem;
+    margin:1rem auto;
+    overflow: hidden;
+
+    @media #{$large-up} {
+        max-width: 40rem;
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        border-bottom:1px solid $lightGreen;
+    }
+}
+
+.event__section {
+    @include grid-column(
+        $columns:12
+    );
+    padding: {
+        top:.5em;
+        bottom:.5em;
+    }
+    border-bottom:1px solid $lightGreen;
+    
+    &:last-child {
+        border-bottom: medium none;
+    }
+
+    @media #{$large-up} {
+        border-bottom:medium none;
+        display: flex;
+        flex:1 1 auto;
+    }
+}
+.event--date {
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:2
+        );
+    }
+}
+
+.event--title {
+    font-weight: 500;
+    @media #{$large-up} {
+        justify-content: center;
+        @include grid-column(
+            $columns:6
+        );
+    }
+}
+
+.event--author {
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:2
+        );
+    }
+}
+
+.event--place {
+    @media #{$large-up} {
+        @include grid-column(
+            $columns:2
+        );
+    }
+}
+
+
+
