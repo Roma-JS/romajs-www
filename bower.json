@@ -1,0 +1,6 @@
+{
+  "name": "RomaJS-www",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  }
+}
