@@ -1,0 +1,14 @@
+.masthead {
+    @extend .section;
+}
+.masthead__title {
+    text-align: center;
+    font: {
+        weight:700;
+        size: 4rem;
+    }
+}
+.masthead__text {
+    @extend .text;
+    @extend .text--mono;
+}
